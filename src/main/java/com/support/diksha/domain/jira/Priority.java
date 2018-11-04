@@ -1,19 +1,19 @@
 package com.support.diksha.domain.jira;
 
-public class Priority {
+public enum Priority {
 
-	private Long id;
-	private String name;
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
+	NONE(1);
+	
+	Priority(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	
+	private int id;
+	
+	public int getId() {
+		return id;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setId(int id) {
+		this.id = id;
 	}
 }
